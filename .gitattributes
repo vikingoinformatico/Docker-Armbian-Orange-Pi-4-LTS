@@ -1,0 +1,2 @@
+# Fuerza LF en scripts para evitar /usr/bin/env: 'bash\r'
+*.sh text eol=lf
