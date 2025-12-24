@@ -97,19 +97,5 @@ systemctl --no-pager --full status docker || {
 info "Probando 'docker run hello-world'..."
 docker run --rm hello-world
 
-# --- Opcional: permitir docker sin sudo para el usuario que invocó sudo ---
-if [[ -n "${SUDO_USER:-}" && "${SUDO_USER}" != "root" ]]; then
-  if getent group docker >/dev/null; then
-    true
-  else
-    info "Creando grupo docker..."
-    groupadd docker || true
-  fi
-
-  info "Agregando usuario '${SUDO_USER}' al grupo docker (para usar docker sin sudo)..."
-  usermod -aG docker "${SUDO_USER}" || true
-  warn "Cierra sesión y vuelve a entrar (o reinicia) para que aplique el grupo docker."
-fi
-
 info "Listo. Docker instalado y funcionando."
 
