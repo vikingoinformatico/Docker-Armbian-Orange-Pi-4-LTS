@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-clear
+if [[ -t 1 ]]; then
+  clear
+fi
 
 cat <<'EOF'
 ██╗   ██╗██╗██╗  ██╗██╗███╗   ██╗ ██████╗  ██████╗ 
