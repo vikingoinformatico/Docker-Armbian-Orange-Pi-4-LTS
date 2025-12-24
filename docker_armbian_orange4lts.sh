@@ -216,3 +216,4 @@ docker run --rm hello-world
 
 info "Listo. Docker instalado y funcionando."
 
+#Versión final 1.0.1
