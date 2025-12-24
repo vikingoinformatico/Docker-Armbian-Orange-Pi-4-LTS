@@ -7,6 +7,8 @@ fi
 
 cat <<'EOF'
 
+# Fecha y hora : $(date '+%Y-%m-%d %H:%M:%S')
+# Zona horaria : $(timedatectl show -p Timezone --value)
 
 
 #    ██╗   ██╗██╗██╗  ██╗██╗███╗   ██╗ ██████╗  ██████╗                                    
@@ -24,7 +26,7 @@ cat <<'EOF'
 #    ╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═════╝ 
 #                                                                                          
 
-***V I K I N G O   I N F O R M A T I C O
+# Instalación de DOCKER en ORANGE PI 4 LTS con armbian
 
 EOF
 
