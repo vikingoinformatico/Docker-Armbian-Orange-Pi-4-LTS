@@ -5,12 +5,16 @@ if [[ -t 1 ]]; then
   clear
 fi
 
+FECHA_HORA="$(date '+%Y-%m-%d %H:%M:%S')"
+ZONA="$(timedatectl show -p Timezone --value)"
+
 cat <<'EOF'
-
-# Fecha y hora : $(date '+%Y-%m-%d %H:%M:%S')
-# Zona horaria : $(timedatectl show -p Timezone --value)
-
-
+###########################################################################################
+#
+# Fecha y hora : $FECHA_HORA
+# Zona horaria : $ZONA
+#
+#
 #    ██╗   ██╗██╗██╗  ██╗██╗███╗   ██╗ ██████╗  ██████╗                                    
 #    ██║   ██║██║██║ ██╔╝██║████╗  ██║██╔════╝ ██╔═══██╗                                   
 #    ██║   ██║██║█████╔╝ ██║██╔██╗ ██║██║  ███╗██║   ██║                                   
