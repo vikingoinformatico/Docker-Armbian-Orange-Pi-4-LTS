@@ -4,9 +4,9 @@ set -euo pipefail
 SCRIPT_NAME="docker_armbian_orange4lts"
 LOG_PREFIX="[$SCRIPT_NAME]"
 
-info()  { echo -e "${LOG_PREFIX} ✅ $*"; }
-warn()  { echo -e "${LOG_PREFIX} ⚠️  $*"; }
-error() { echo -e "${LOG_PREFIX} ❌ $*" >&2; }
+info()  { echo -e "${LOG_PREFIX} OK $*"; }
+warn()  { echo -e "${LOG_PREFIX} !¡ $*"; }
+error() { echo -e "${LOG_PREFIX} ERROR $*" >&2; }
 
 need_cmd() {
   command -v "$1" >/dev/null 2>&1 || {
