@@ -9,8 +9,15 @@ FECHA_HORA="$(date '+%Y-%m-%d %H:%M:%S')"
 ZONA="$(timedatectl show -p Timezone --value 2>/dev/null || cat /etc/timezone 2>/dev/null || echo 'Unknown')"
 
 cat <<EOF
-                        Fecha y hora : $FECHA_HORA
-                        Zona horaria : $ZONA
+#                                                                                              
+#                                                                                              
+#     ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄  
+#    ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ 
+#    ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ ▀█▀█▀ 
+#                                                                                              
+#
+#                       Fecha y hora : $FECHA_HORA
+#                       Zona horaria : $ZONA
 #
 #
 #    ██╗   ██╗██╗██╗  ██╗██╗███╗   ██╗ ██████╗  ██████╗                                    
